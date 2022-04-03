@@ -1,6 +1,6 @@
 # strapi (v4+) containerized
 
-![Strapi](https://github.com/naskio/docker-strapi/blob/main/assets/PNG.logo.purple.dark.png?raw=true)
+![Strapi](https://github.com/junglewp/strapi/blob/main/assets/PNG.logo.purple.dark.png?raw=true)
 
 > Docker image for strapi version 4 (latest version)
 
