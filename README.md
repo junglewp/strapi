@@ -34,7 +34,7 @@ services:
 or using Docker:
 
 ```shell
-docker run -d -p 1337:1337 naskio/strapi --env NODE_ENV=development
+docker run -d -p 1337:1337 junglewpltd/strapi --env NODE_ENV=development
 ```
 
 You can find more example on [GitHub](https://github.com/naskio/docker-strapi/tree/main/examples).
