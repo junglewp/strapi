@@ -1,9 +1,9 @@
 # BASE
-ARG NODE_VERSION=14
-FROM node:${NODE_VERSION}-alpine AS base-alpine
+ARG NODE_VERSION=18
+FROM node:${NODE_VERSION}-alpine AS alpine
 EXPOSE 1337
 
-FROM base-alpine
+FROM alpine
 
 ARG STRAPI_VERSION=latest
 
