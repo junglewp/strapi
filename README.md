@@ -91,7 +91,7 @@ based on [node v14](https://hub.docker.com/_/node).
 Example of Dockerfile:
 
 ```dockerfile
-FROM node:14
+FROM node:18
 # alternatively you can use FROM strapi/base:latest
 
 # Set up working directory
