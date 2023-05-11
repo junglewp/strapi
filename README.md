@@ -86,7 +86,7 @@ To run an existing project, you can mount the project folder in the container at
 # Recommended way to deploy an existing strapi project to production using Docker
 
 To deploy an existing strapi project to production using Docker, it is recommended to build an image for your project
-based on [node v14](https://hub.docker.com/_/node).
+based on [node v18](https://hub.docker.com/_/node).
 
 Example of Dockerfile:
 
@@ -103,8 +103,8 @@ COPY package.json .
 # Copy yarn.lock to root directory
 COPY yarn.lock .
 
-# Install dependencies, but not generate a yarn.lock file and fail if an update is needed
-RUN yarn install --frozen-lockfile
+# Install dependencies
+RUN yarn install
 
 # Copy strapi project files
 COPY favicon.ico ./favicon.ico
