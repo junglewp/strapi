@@ -27,11 +27,13 @@ if [ "$*" = "strapi" ]; then
     if [ -f "yarn.lock" ]; then
 
       echo "Node modules not installed. Installing using yarn ..."
+      yarn global add node-gyp
       yarn install --prod --silent
 
     else
 
       echo "Node modules not installed. Installing using npm ..."
+      npm install -g node-gyp
       npm install --only=prod --silent
 
     fi
