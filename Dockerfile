@@ -1,8 +1,8 @@
 # BASE
 ARG NODE_VERSION=18
-FROM node:${NODE_VERSION}-alpine as build
+FROM node:${NODE_VERSION}-alpine
 # Installing libvips-dev for sharp Compatibility
-RUN apk update && apk add --no-cache build-base gcc autoconf automake zlib-dev libpng-dev vips-dev git > /dev/null 2>&1
+RUN apk update && apk add --no-cache build-base gcc autoconf automake zlib-dev libpng-dev nasm bash vips-dev git
 
 
 FROM base-alpine
