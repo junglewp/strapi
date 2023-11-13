@@ -1,5 +1,5 @@
 # BASE
-ARG NODE_VERSION=18
+ARG NODE_VERSION=18.16.0
 
 FROM node:${NODE_VERSION}-alpine AS base-alpine
 
