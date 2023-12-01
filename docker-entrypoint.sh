@@ -27,14 +27,12 @@ if [ "$*" = "strapi" ]; then
     if [ -f "yarn.lock" ]; then
 
       echo "Node modules not installed. Installing using yarn ..."
-      #yarn install --prod --silent
-      yarn install --prod
+      yarn install --prod --silent
 
     else
 
       echo "Node modules not installed. Installing using npm ..."
-      #npm install --only=prod --silent
-      npm install --only=prod
+      npm install --only=prod --silent
 
     fi
 
