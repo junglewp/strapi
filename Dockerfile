@@ -5,7 +5,7 @@ EXPOSE 1337
 
 FROM base-alpine
 
-ARG STRAPI_VERSION=v4.14.5
+ARG STRAPI_VERSION=latest
 
 RUN yarn global add @strapi/strapi@${STRAPI_VERSION}
 
